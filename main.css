@@ -1,0 +1,144 @@
+body{
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.login {
+    position: relative;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.login h4 {
+    font-size: 30px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 20px;
+}
+
+.login .sign-in {
+    padding: 8px;
+}
+
+.login .sign-up {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.login .bar {
+    flex-grow: 1;
+}
+
+.login .menu {
+    width: 28px;
+    height: 28px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header {
+    margin-top: 45px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+header > .inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-image: url(./images/header_logo.png);
+    background-position: center;
+}
+
+header .site_logo {
+    width: 180px !important;
+    height: 180px;
+}
+
+header .item-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .item-menu li {
+    position: relative;
+}
+
+header .item-menu li::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    opacity: .5;
+}
+
+
+header .item-menu li:first-child::before {
+    display: none;
+}
+
+header .item-menu li a {
+    cursor: pointer;
+    font-size: 26px;
+    padding: 0 26px;
+    color: white;
+}
+
+header .make_btn {
+    flex-grow: 1;
+    height: 100%;
+    background-image: url(./images/header_btn_bg.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+header .make_btn a{
+    color: white;
+}
+
+.visual {
+    background-image: url(./images/visual_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.visual .inner {
+    height: 800px;
+}
